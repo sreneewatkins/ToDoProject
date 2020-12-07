@@ -1,0 +1,53 @@
+#titleBlock {
+    background-color: rgb(98, 230, 186);
+    padding: 70px;
+    border-bottom: 2px solid #000;
+}
+
+#listBlock {
+    background-color:lightsalmon;
+    padding: 40px;
+}
+
+ol li {
+    padding: 12px 8px 12px 40px; 
+    background:rgb(180, 199, 218);
+}
+
+ol li:nth-child(odd) {
+    background:whitesmoke;
+}
+
+ol li:hover {     
+    background: #ddd;
+}
+
+ol li.checked {  
+    background: #888;
+    color: #fff; 
+    text-decoration: line-through;
+    transition: 5s; 
+}
+
+ol li.checked::marker {
+    color: lightsalmon;
+}
+
+li.checked::before {   /*wonder why ol is not needed*/
+    content: '';
+    /*position: absolute;  put in the titleBlock*/
+    display:inline-block; /*inline-block puts it right in front of words, block puts it on the left side but bar changes size*/
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+}  
+
+.close:hover {
+    background-color: rgb(98, 230, 186);
+    padding: 5px; /*still moving the x*/
+}

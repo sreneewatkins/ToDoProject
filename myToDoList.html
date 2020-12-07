@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="Assets/Images/mybitmoji_02C_icon.ico">
+    <link rel="stylesheet" href="Assets/StyleSheets/myToDoStyle.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <title>To Do</title>
+</head>
+
+<body>
+    <div id="titleBlock" class="container-fluid text-center">
+        <h1>Renee's To Do List</h1><br>
+        <label>Create a list. </label>
+        <input type="text" id="todoInput" placeholder="What do you need to do?..."></input>
+        <button onclick="addToList()">ADD</button>
+    </div>
+
+    <div id="listBlock" class="container-fluid">
+        <p>Let's get some things done:</p>
+        <ol id="myOL" class="text-center"></ol>
+    </div>
+
+    <script src="Assets/JSCode/myToDo.js"></script>
+</body>
+
+</html>
